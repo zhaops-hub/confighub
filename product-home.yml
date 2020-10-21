@@ -1,9 +1,3 @@
-server:
-  port: 8003
-
-spring:
-  application:
-    name: productservice
 
   jpa:
     open-in-view: true
@@ -34,16 +28,6 @@ spring:
 feign:
   hystrix:
     enabled: true
-
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://127.0.0.1:8000/eureka
-
 
 hystrix:
   dashboard:
