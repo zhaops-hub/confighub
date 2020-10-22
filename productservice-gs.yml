@@ -44,4 +44,4 @@ management:
     health:
       show-details: ALWAYS
       
-name: "zhaops"
+name: "zhaops1"
