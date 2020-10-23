@@ -10,6 +10,25 @@ spring:
       hibernate:
         physical_naming_strategy: com.zhaops.productservice.product.util.HibernatePhysicalNamingNamingStrategy
     database: H2
+    
+  zipkin:
+    base-url: http://127.0.0.1:9411
+    enabled: true
+    
+  sleuth:
+    sampler:
+      percentage: 1.0
+      
+  redis:
+    host: 172.16.100.177
+    port: 6379
+    password:
+    database: 0
+    timeout: 3000
+    pool:
+      max-active: 100
+      max-idle: 20
+      max-wait-millis: 15000
 
   datasource:
     driver-class-name: org.h2.Driver
