@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: userservice
+
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+    properties:
+      hibernate:
+        physical_naming_strategy: com.zhaops.userservice.util.HibernatePhysicalNamingNamingStrategy
+    database: H2
+
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:file:./dbh2/dbc2m;AUTO_SERVER=TRUE
+    username: sa
+    password:
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+    platform: h2
+
+  h2:
+    console:
+      enabled: true
+      path: /h2
