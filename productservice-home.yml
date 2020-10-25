@@ -69,5 +69,5 @@ management:
     health:
       show-details: ALWAYS
       
-name: "zhaops1111122221"
+name: "zhaopeisheng"
 pass: "{cipher}41365d10cf71343ab11bf1d7a8699529509e89c840f138d8aa2a742f0008eacd"
